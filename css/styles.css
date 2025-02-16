@@ -537,7 +537,6 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -546,7 +545,7 @@ address {
   color: #fff;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   border: none;
@@ -556,6 +555,7 @@ address {
 
 .footer-subcribe-icon {
   fill: #fff;
+  margin-left: 16px;
 }
 /** ================================== */
 /** ==============MODAL WINDOW================ */
@@ -569,7 +569,7 @@ address {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* display: flex;
   align-items: center;
   justify-content: center; */
@@ -593,6 +593,7 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -676,7 +677,7 @@ address {
 
 .modal-label {
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
@@ -688,6 +689,7 @@ address {
 
 .modal-textarea {
   font-size: 12px;
+  color: rgba(46, 47, 66, 0.4);
   line-height: 1.17;
   letter-spacing: 0.04em;
   padding: 8px 16px;
@@ -734,7 +736,7 @@ address {
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
   fill: transparent;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -745,7 +747,7 @@ address {
   line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #404bbf;
+  color: #4d5ae5;
 }
 
 .modal-send-btn {
