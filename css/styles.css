@@ -729,7 +729,7 @@ address {
   align-items: center;
 }
 
-.check-text span {
+.privacy-checkbox-icon {
   width: 16px;
   height: 16px;
   border-radius: 2px;
